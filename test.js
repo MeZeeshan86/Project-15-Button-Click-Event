@@ -5,7 +5,7 @@ const assert = require("node:assert/strict");
   const driver = await new Builder().forBrowser("chrome").build();
 
   try {
-    await driver.get("http://localhost:5502");
+    await driver.get("http://localhost:8090");
 
     // Find and click the button
     await driver.findElement(By.id("alert-button")).click();
